@@ -1,0 +1,145 @@
+
+.navbar {
+    min-height: 70px;
+    width: 100%;
+    background: linear-gradient(135deg, #2874f0, #1455b8);
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    gap: 22px;
+    color: white;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* LOGO */
+
+.navbar-logo {
+    font-size: 23px;
+    font-weight: bold;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+/* LOCATION */
+
+.navbar-location {
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+/* SEARCH */
+
+.navbar-search {
+    flex: 1;
+    max-width: 620px;
+    height: 42px;
+    display: flex;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.navbar-search input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.navbar-search input::placeholder {
+    color: #888;
+}
+
+.navbar-search button {
+    width: 55px;
+    border: none;
+    background: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.navbar-search button:hover {
+    background: #f1f1f1;
+}
+
+/* LINKS */
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.nav-item {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-item:hover {
+    opacity: 0.8;
+}
+
+/* LOGIN */
+
+.login-button {
+    border: none;
+    background: white;
+    color: #2874f0;
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.login-button:hover {
+    background: #f1f1f1;
+    transform: translateY(-1px);
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+    .navbar {
+        padding: 12px 20px;
+        flex-wrap: wrap;
+    }
+
+    .navbar-location {
+        display: none;
+    }
+
+    .navbar-search {
+        order: 3;
+        width: 100%;
+        max-width: none;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        gap: 12px;
+    }
+
+    .navbar-logo {
+        font-size: 20px;
+    }
+
+    .navbar-links {
+        gap: 8px;
+        font-size: 12px;
+    }
+
+    .login-button {
+        padding: 8px 12px;
+    }
+}
+

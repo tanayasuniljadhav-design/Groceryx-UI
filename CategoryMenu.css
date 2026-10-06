@@ -1,0 +1,58 @@
+.category-menu {
+
+    height: 52px;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 32px;
+
+    padding: 0 20px;
+
+    box-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.08);
+
+    overflow-x: auto;
+
+    white-space: nowrap;
+}
+
+
+.category-menu-item {
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    padding: 8px 4px;
+
+    transition: 0.2s;
+}
+
+
+.category-menu-item:hover {
+
+    color: #2874f0;
+
+    transform: translateY(-1px);
+}
+
+
+@media (max-width: 700px) {
+
+    .category-menu {
+
+        justify-content: flex-start;
+
+        gap: 22px;
+
+    }
+
+}

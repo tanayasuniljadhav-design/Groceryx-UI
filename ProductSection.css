@@ -1,0 +1,559 @@
+/* =====================================================
+   PRE-LOGIN PRODUCT SECTION
+===================================================== */
+
+.gx-product-section {
+  width: calc(100% - 40px);
+  max-width: 1400px;
+
+  margin: 18px auto;
+
+  padding: 22px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #111827,
+      #172033
+    );
+
+  border:
+    1px solid rgba(94, 234, 212, 0.13);
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 12px 32px rgba(0, 0, 0, 0.25);
+
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.gx-products-heading {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 18px;
+
+  gap: 15px;
+}
+
+.gx-products-heading > div:first-child {
+  min-width: 0;
+}
+
+.gx-products-heading span {
+  color: #5eead4;
+
+  font-size: 9px;
+
+  font-weight: 900;
+
+  letter-spacing: 1.4px;
+}
+
+.gx-products-heading h2 {
+  margin: 4px 0;
+
+  color: #f8fafc;
+
+  font-size: 22px;
+
+  line-height: 1.2;
+}
+
+.gx-products-heading p {
+  margin: 0;
+
+  color: #94a3b8;
+
+  font-size: 11px;
+}
+
+.gx-product-count {
+  flex-shrink: 0;
+
+  width: 90px;
+
+  padding: 9px;
+
+  text-align: center;
+
+  border-radius: 9px;
+
+  background:
+    rgba(20, 184, 166, 0.1);
+
+  border:
+    1px solid rgba(94, 234, 212, 0.15);
+}
+
+.gx-product-count strong {
+  display: block;
+
+  color: #5eead4;
+
+  font-size: 20px;
+}
+
+.gx-product-count small {
+  color: #94a3b8;
+
+  font-size: 9px;
+}
+
+
+/* =====================================================
+   GRID
+===================================================== */
+
+.gx-product-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, minmax(0, 1fr));
+
+  gap: 12px;
+
+  width: 100%;
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.gx-product-card {
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  background:
+    #182235;
+
+  border:
+    1px solid rgba(148, 163, 184, 0.11);
+
+  border-radius: 12px;
+
+  transition: 0.2s ease;
+
+  box-sizing: border-box;
+
+  /*
+    No fixed height.
+  */
+  height: auto;
+
+  overflow: visible;
+}
+
+.gx-product-card:hover {
+  transform: translateY(-4px);
+
+  border-color:
+    rgba(45, 212, 191, 0.45);
+
+  box-shadow:
+    0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+/* =====================================================
+   PRODUCT TOP
+===================================================== */
+
+.gx-product-top {
+  height: 125px;
+
+  min-height: 125px;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #0f172a,
+      #164e63
+    );
+
+  border-radius:
+    12px 12px 0 0;
+
+  border-bottom:
+    1px solid rgba(94, 234, 212, 0.1);
+}
+
+.gx-product-icon {
+  font-size: 57px;
+
+  line-height: 1;
+}
+
+
+/* =====================================================
+   DISCOUNT
+===================================================== */
+
+.gx-discount {
+  position: absolute;
+
+  top: 8px;
+
+  left: 8px;
+
+  padding: 4px 6px;
+
+  border-radius: 5px;
+
+  background:
+    #f59e0b;
+
+  color: #111827 !important;
+
+  font-size: 8px !important;
+
+  font-weight: 900 !important;
+
+  letter-spacing: 0 !important;
+}
+
+
+/* =====================================================
+   PRODUCT META
+===================================================== */
+
+.gx-product-meta {
+  position: absolute;
+
+  bottom: 8px;
+
+  left: 8px;
+
+  right: 8px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 5px;
+}
+
+.gx-product-meta span {
+  padding: 3px 5px;
+
+  border-radius: 4px;
+
+  background:
+    rgba(15, 23, 42, 0.8);
+
+  color: #cbd5e1 !important;
+
+  font-size: 8px !important;
+
+  letter-spacing: 0 !important;
+}
+
+
+/* =====================================================
+   BODY
+===================================================== */
+
+.gx-product-body {
+  padding: 11px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  min-width: 0;
+}
+
+.gx-title-row {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  gap: 5px;
+}
+
+.gx-title-row h3 {
+  margin: 0;
+
+  color: #f8fafc;
+
+  font-size: 13px;
+
+  line-height: 1.3;
+
+  word-break: normal;
+
+  overflow: visible;
+}
+
+.gx-title-row > span {
+  flex-shrink: 0;
+
+  color: #fbbf24;
+
+  font-size: 8px;
+
+  font-weight: 700;
+}
+
+.gx-product-body p {
+  margin: 6px 0;
+
+  color: #8fa1b5;
+
+  font-size: 9px;
+
+  line-height: 1.4;
+
+  overflow: visible;
+}
+
+
+/* =====================================================
+   PRICE
+===================================================== */
+
+.gx-price {
+  display: flex;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 5px;
+
+  margin: 3px 0 7px;
+}
+
+.gx-price strong {
+  color: #5eead4;
+
+  font-size: 17px;
+}
+
+.gx-price del {
+  color: #64748b;
+
+  font-size: 9px;
+}
+
+.gx-price em {
+  color: #fbbf24;
+
+  font-size: 8px;
+
+  font-style: normal;
+
+  font-weight: 800;
+}
+
+
+/* =====================================================
+   BENEFITS
+===================================================== */
+
+.gx-benefit {
+  color: #86efac;
+
+  font-size: 8px;
+
+  line-height: 1.5;
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.gx-product-body button {
+  width: 100%;
+
+  margin-top: 9px;
+
+  padding: 7px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #0d9488,
+      #2563eb
+    );
+
+  color: white;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.gx-product-body button:hover {
+  background:
+    linear-gradient(
+      135deg,
+      #14b8a6,
+      #3b82f6
+    );
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.gx-products-footer {
+  margin-top: 15px;
+
+  padding: 11px 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 12px;
+
+  border-radius: 9px;
+
+  background:
+    rgba(20, 184, 166, 0.08);
+
+  border:
+    1px solid rgba(94, 234, 212, 0.12);
+}
+
+.gx-products-footer strong {
+  display: block;
+
+  color: #f8fafc;
+
+  font-size: 11px;
+}
+
+.gx-products-footer span {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #8294a9;
+
+  font-size: 8px;
+}
+
+.gx-products-footer b {
+  padding: 6px 9px;
+
+  border-radius: 15px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #14b8a6,
+      #2563eb
+    );
+
+  color: white;
+
+  font-size: 8px;
+
+  white-space: nowrap;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1200px) {
+
+  .gx-product-grid {
+    grid-template-columns:
+      repeat(4, minmax(0, 1fr));
+  }
+
+}
+
+@media (max-width: 950px) {
+
+  .gx-product-grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .gx-product-section {
+    width: calc(100% - 20px);
+
+    padding: 15px;
+  }
+
+  .gx-product-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 9px;
+  }
+
+  .gx-products-heading h2 {
+    font-size: 18px;
+  }
+
+}
+
+@media (max-width: 420px) {
+
+  .gx-product-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .gx-product-top {
+    height: 110px;
+
+    min-height: 110px;
+  }
+
+  .gx-product-icon {
+    font-size: 47px;
+  }
+
+  .gx-product-body {
+    padding: 8px;
+  }
+
+  .gx-title-row h3 {
+    font-size: 11px;
+  }
+
+}

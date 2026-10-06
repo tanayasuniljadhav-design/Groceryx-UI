@@ -1,0 +1,310 @@
+/* =====================================================
+   GROCERYX HERO
+===================================================== */
+
+.gx-hero {
+  width: calc(100% - 40px);
+  max-width: 1400px;
+
+  height: 285px;
+  min-height: 285px;
+
+  margin: 18px auto;
+
+  padding: 28px 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 25px;
+
+  position: relative;
+
+  border-radius: 18px;
+
+  background:
+    radial-gradient(
+      circle at 85% 50%,
+      rgba(45, 212, 191, 0.18),
+      transparent 25%
+    ),
+    linear-gradient(
+      110deg,
+      #0f172a,
+      #123c4a 55%,
+      #29245c
+    );
+
+  border: 1px solid rgba(94, 234, 212, 0.18);
+
+  box-shadow:
+    0 12px 32px rgba(0, 0, 0, 0.28);
+
+  overflow: hidden;
+}
+
+
+/* =====================================================
+   LEFT CONTENT
+===================================================== */
+
+.gx-hero-content {
+  width: 62%;
+  min-width: 0;
+}
+
+.gx-hero-tag {
+  display: inline-block;
+
+  color: #5eead4;
+
+  font-size: 10px;
+
+  font-weight: 900;
+
+  letter-spacing: 1.3px;
+
+  margin-bottom: 7px;
+}
+
+.gx-hero-content h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 36px;
+
+  line-height: 1.05;
+
+  font-weight: 900;
+}
+
+.gx-hero-content h1 span {
+  color: #5eead4;
+}
+
+.gx-hero-content p {
+  max-width: 600px;
+
+  margin: 10px 0;
+
+  color: #b8c7d9;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+
+/* =====================================================
+   POINTS
+===================================================== */
+
+.gx-hero-points {
+  display: flex;
+
+  gap: 22px;
+
+  margin: 10px 0 13px;
+}
+
+.gx-hero-points div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+.gx-hero-points strong {
+  color: #ffffff;
+
+  font-size: 11px;
+}
+
+.gx-hero-points small {
+  color: #8294a9;
+
+  font-size: 9px;
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.gx-hero-btn {
+  border: none;
+
+  padding: 9px 17px;
+
+  border-radius: 7px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #14b8a6,
+      #2563eb
+    );
+
+  color: #ffffff;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.gx-hero-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 7px 18px rgba(20, 184, 166, 0.25);
+}
+
+
+/* =====================================================
+   RIGHT VISUAL
+===================================================== */
+
+.gx-hero-visual {
+  width: 35%;
+
+  height: 230px;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.gx-hero-main-icon {
+  width: 155px;
+
+  height: 155px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      135deg,
+      #14b8a6,
+      #2563eb
+    );
+
+  font-size: 76px;
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.gx-floating {
+  position: absolute;
+
+  width: 43px;
+
+  height: 43px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #111827;
+
+  border: 1px solid rgba(94, 234, 212, 0.2);
+
+  font-size: 23px;
+
+  box-shadow:
+    0 7px 18px rgba(0, 0, 0, 0.25);
+}
+
+.gx-fruit {
+  top: 20px;
+  left: 30px;
+}
+
+.gx-milk {
+  top: 20px;
+  right: 15px;
+}
+
+.gx-bread {
+  bottom: 18px;
+  right: 35px;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+  .gx-hero {
+    height: auto;
+    min-height: 300px;
+
+    padding: 25px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .gx-hero-content {
+    width: 100%;
+  }
+
+  .gx-hero-visual {
+    display: none;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .gx-hero {
+    width: calc(100% - 20px);
+
+    min-height: 270px;
+
+    padding: 22px;
+
+    margin: 12px auto;
+  }
+
+  .gx-hero-content h1 {
+    font-size: 29px;
+  }
+
+  .gx-hero-content p {
+    font-size: 11px;
+  }
+
+  .gx-hero-points {
+    gap: 13px;
+  }
+
+}
